@@ -1,0 +1,54 @@
+body{
+    margin: 0 auto;
+    width: 75%;
+    max-width: 75%;
+    height: 100vh;
+    background-image: url(../imagens/fundo.png);
+}
+
+
+
+.logo{
+    padding-top: 35px;
+    margin-bottom: 0px;
+    
+}
+
+.__header{
+
+    display: flex;
+    align-items: center;
+    gap: 50%;
+}
+
+.link{
+    display: flex;
+    gap: 5px;
+}
+
+.o-footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.imagem-capa{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding: 50px auto;
+    width: 100%;
+}
+
+.nav-curso{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.nav{
+    border: 2px red solid;
+}
+

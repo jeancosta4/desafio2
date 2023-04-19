@@ -1,0 +1,25 @@
+from flask import Flask, render_template
+
+app = Flask("__name__")
+
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+
+
+@app.route("/quemsomos")
+def quem():
+    return render_template("quemsomos.html")
+
+
+@app.route("/contatos")
+def cont():
+    return render_template("contatos.html")
+
+@app.route("/cursos")
+def cursos():
+    return render_template("cursos.html")
+
+

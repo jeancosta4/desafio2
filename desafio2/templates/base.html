@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/normalize.css')}}">
+
+
+</head>
+<body>
+
+   
+    <header class="__header">
+
+        <span >
+            <img class="logo" src="../static/imagens/logo.png" alt="Logo">
+    
+        </span>
+     
+
+        <span class='link'>
+            
+            <a href="/">Home</a> |
+            <a href="/quemsomos">QuemSomos</a>|
+            <a href="/contatos">Contatos</a> |
+            <a href="/cursos">Cursos</a>
+        </span>
+    </header>
+
+    {% block main %}
+
+
+    {% endblock %}
+
+
+    
+
+    <footer class="o-footer">
+        <h3 class="rodape">Todos os direitos reservados</h3>
+    </footer>
+   
+    
+</body>
+</html>
